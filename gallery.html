@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DisasterManagement</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="icon\dmlogo.png" sizes="20x20">
+</head>
+<body>
+  <div>
+    <table align="center" class="body" >
+      <td class="tablebody"><img class="logo" src="icon\dmlogo.png" width="200px">
+        <div class="hadder"><h2 align="center"><strong><font face="impact" size="50px">Welcome to Disaster Management</font></strong></h2> 
+         </div>
+         <div class="navbar">
+        <div class="block-menu">
+       <div class="home-menu"><a href="home.html" class="three-d"><img src="icon\Address.png" width="16px"> Home
+        <span aria-hidden="true" class="three-d-box">
+        <span class="front"><img src="icon\Address.png" width="16px"> Home</span>
+        <span class="back"> <img src="icon\Address.png" width="16px">Home</span>
+        </span>
+        </a>
+        </div>
+        <div class="home-menu"><a href="gallery.html" class="three-d">
+         Gallery
+          <span aria-hidden="true" class="three-d-box">
+      <span class="front">Gallery</span>
+      <span class="back">Gallery</span>
+      </span>
+    </a></div>
+    <div class="home-menu"><a href="contact.html" class="three-d">
+    Contact
+    <span aria-hidden="true" class="three-d-box">
+      <span class="front">Contact</span>
+      <span class="back">Contact</span>
+      </span>
+     </a></div>
+     <div class="home-menu"><a href="aboutNDRF.html" class="three-d"> About NDRF
+      <span aria-hidden="true" class="three-d-box">
+      <span class="front">About NDRF</span>
+      <span class="back">About NDRF</span>
+      </span>
+      </a></div>
+  <div class="home-menu">
+    <div class="dropdown">
+    <a href="#" class="three-d" class="fa fa-caret-down">
+      <button id="dropbtn">Disaster 
+      <span aria-hidden="true" class="three-d-box">
+      <span class="front">Disaster</span>
+      <span class="back">Disaster</span>
+      </span></button>
+      <div class="dropdown-content">
+           <a href="Natural Disasters.html" target="">Natural Disasters
+            </a>
+           <a href="Man-Made Disasters.html" target="">Man-Made Disasters</a>            
+          </div>
+      </a>
+      </div>
+      </div>
+  <div class="home-menu">
+    <div class="dropdown">
+    <a href="#" class="three-d" class="fa fa-caret-down">
+      <button id="dropbtn">Disaster Management  
+      <span aria-hidden="true" class="three-d-box">
+      <span class="front">Disaster Management</span>
+      <span class="back">Disaster Management</span>
+      </span></button>
+      <div class="dropdown-content">
+           <a href="ndma.html" target="">NDMA</a>
+           <a href="policesacts.html" target="">Polices & Acts</a>
+           <a href="guidelines dm.html" target="">Guidelines on DM</a>
+           <a href="DM plan.html" target="">Disaster Management Plan</a>
+           <a href="disaster risk reduction.html" target="">Disaster Risk Reduction</a>
+           <a href="civildefence.html" target="">Civil Defence</a>
+
+          </div>
+        </a></div>
+        </div>
+        <div class="home-menu"><a href="apps.html" target="_blank" class="three-d">
+       Android Apps
+        <span aria-hidden="true" class="three-d-box">
+       <span class="front">Android Apps</span>
+       <span class="back">Android Apps</span>
+        </span>
+        </a></div>
+        <div class="home-menu"><a href="3rdndrfm.html" target="_blank" class="three-d">
+       3RD NDRF M
+        <span aria-hidden="true" class="three-d-box">
+       <span class="front">3RD NDRF M</span>
+       <span class="back">3RD NDRF M</span>
+        </span>
+        </a></div>
+        <div class="home-menu" style="float: "><a href="aboutme.html" target="_blank" class="three-d">
+       About Me
+        <span aria-hidden="true" class="three-d-box">
+       <span class="front">About Me</span>
+       <span class="back">About Me</span>
+        </span>
+        </a></div>
+        
+           </div>
+           </div>
+<body>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 5px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 14%;
+    padding: 4px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 10px;
+    left: 140px;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px; padding:5px;
+    height:30px;
+    background-color: rgba(0,0,0,.5);
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 5px;
+    right: 125px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 25px;
+    width: 30px;
+}
+</style>
+</head>
+<body>
+
+
+	<div style="font-family:nyala" class="phead"> Photo Training & Mock Exercise 03BN NDRF Mundali  </div>
+
+  
+
+
+<!-- The gallery columns -->
+<div class="row">
+  <div class="column">
+    <img src="gphoto\mockex\Achievement.jpg" alt="Achievement" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\mockex\Achievement1.jpg" alt="Group Photo Odisha Disastar Day" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\mockex\mockex1.jpg" alt="Discussion About Mock Exercise " style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\mockex\mockex2.jpg" alt="Mock Exercise With Railway" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\mockex\mockex3.jpg" alt="CBRN Mock Exercise" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\mockex\mockex4.jpg" alt="CBRN Mock Exercise" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\mockex\mockex5.jpg" alt="Canine Search & Rescue" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="gphoto\traning\tr1.jpg" alt="CSSR Training" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\traning\tr2.jpg" alt="CSSR Training" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\traning\tr3.jpg" alt="CSSR Training" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\traning\tr4.jpg" alt="Heli Slithering Training" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\traning\tr5.jpg" alt="Demonstration" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\traning\tr6.jpg" alt="Exhibition" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\traning\tr7.jpg" alt="Deep Diving Training" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
+</div>
+
+
+<div class="container" style="text-align: center;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:80%; height: 600px" >
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+
+
+<div style="font-family:nyala" class="phead"> Photos For Operation Don By 03BN NDRF Mundali  </div>
+
+
+<!-- The gallery columns -->
+<div class="row">
+  <div class="column">
+    <img src="gphoto\operation\1.jpg" alt="Evacuation of  Bihar  Cosy Flood  2008" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\operation\2.jpg" alt="Evacuation of  Bihar  Cosy Flood  2008" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\operation\3.jpg" alt="Evacuation of  Bihar  Cosy Flood  2008" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\operation\4.jpg" alt="Flood Rescue  Relief operation  Bihar 2010" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\operation\5.jpg" alt="Karala Flood Rescue Operation 2018" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\operation\6.jpg" alt="Flood Rescue Operation at  A.P 2009" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\operation\7.jpg" alt="Karala Flood Rescue Operation 2018" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
+</div>
+<div class="row">
+  <div class="column">
+    <img src="gphoto\operation\8.jpg" alt="Hudhud Cyclone Rescue  Relief Operaion 2014" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\operation\9.jpg" alt="Odisha Flash Flood Rescue  Opearation 2013" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\operation\10.jpg" alt="Odisha Flash Flood Rescue  Relief Opearation 2013 " style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\operation\11.jpg" alt="Odisha Flood Rescue & Relief Operation 2011" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\operation\12.jpg" alt="Odisha Flood Rescue Relief Operation 2010" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\operation\13.jpg" alt="Odisha Flood Rescue Relief Operation 2011" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\operation\14.jpg" alt="Phailin Relief Rescue Operation Odisha 2013" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\operation\15.jpg" alt="Phailin Rescue Relief Operation Odisha 2013" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\operation\16.jpg" alt="Rescue  Relief operation  Bihar Flood 2010" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="gphoto\operation\17.jpg" alt="Rescue Operation Trapped in Stone" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
+</div>
+<div class="container" style="text-align: center;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:80%; height: 600px" >
+  <div id="imgtext"></div>
+</div>
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>

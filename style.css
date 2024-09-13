@@ -1,0 +1,313 @@
+*{margin-top: 0px;
+background-color:;
+}
+
+a {text-decoration: none;
+  font-family: Nyala;
+  color: #6916ce;
+  cursor: pointer;   
+
+}
+
+.logo{
+  position: absolute;
+
+}
+
+a:hover{
+  color: green;
+  text-decoration: underline;
+  
+}
+
+
+.alllist{
+  text-align: justify;
+  text-justify: inter-word;
+}
+figcaption{
+  margin-top: 90px;
+  position: absolute;
+  margin-left: 1010px;
+  font-family: nyala;
+  color: white;
+}
+
+.body{
+	width: 1100px;
+	height: 100%;
+	background-color: #defcfe; 
+
+}
+.tablebody{
+	background-color: ;
+	position: center;
+	
+}
+
+.manbodydown{
+  
+  padding: 10px;
+}
+.manbodydown p{
+  text-align: justify;
+}
+
+.scrollbar{position: absolute;
+	
+}
+.scrolltext{
+	width: 692px;
+	float: left;
+	margin-top: 12px;
+	margin-left: 95px;
+}
+.manbody{float: left;
+  margin-top: 10px;	
+	
+}
+
+.phead{font-size: 20px;
+  font-style: bold;
+  color: blue;
+  padding-top: 10px;
+
+}
+
+.hadder h2{color: rgba(16,20,130,.8);
+           margin-bottom: 50px;
+           margin-top: 40px;
+	         text-shadow: 3px 3px #9A5016;
+           text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+.list{
+  
+  padding-bottom: 10px;
+}
+
+
+.line{
+  height: 3px;
+  background-color: red;
+
+}
+.footer{
+  text-align: center;
+  padding-right: 200px;
+  padding-left: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.improtantlink{
+  padding-top: 20px;
+  text-align: center;
+  background-color: ;
+}
+.massageboxh1{
+  margin-top: 50px;
+  margin-left: 5px;
+  color: #af3915;
+}
+.massagebody{
+  margin-top: 50px;
+  margin-left: 5px;
+}
+
+/*////////////////////slideshow/////////////////*/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+
+/*///////////topnav////////////////////////////*/
+.block-menu {
+  display: block;
+  background: rgba(0,0,0,0.3);
+  height: 51px;
+  
+}
+
+.home-menu {
+  display: inline-block;
+
+}
+
+#dropbtn{
+  font-size: 16px;
+  font-family: nyala;
+  background-color: rgba(25,58,58,.7);
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Passion One', Nyala, sans-serif;
+  font-smoothing: antialiased;
+  text-transform: uppercase;
+  overflow: visible;
+  line-height: 14px;
+  height: 15px; 
+  border-radius: 15px;
+  
+}
+
+.home-menu a {
+  color: red;
+  display: block;
+  text-decoration: none;
+  font-family: 'Passion One', Nyala, sans-serif;
+  font-smoothing: antialiased;
+  text-transform: uppercase;
+  overflow: visible;
+  line-height: 20px;
+  font-size: 16px;
+  padding: 15px 10px;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(25,58,58,.7);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(90, 153, 92);
+  color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: #253a23;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* animation domination */
+.three-d {
+  perspective: 200px;
+  transition: all .05s linear;
+  position: relative;
+  cursor: ;
+}
+  /* complete the animtion! */
+  .three-d:hover .three-d-box, 
+  .three-d:focus .three-d-box {
+    transform: translateZ(-25px) rotateX(90deg);
+  }
+
+.three-d-box {
+  transition: all .3s ease-out;
+  transform: translatez(-25px);
+  transform-style: preserve-3d;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;  
+}
+
+/* 
+  put the "front" and "back" elements into place with CSS transforms, 
+  specifically translation and translatez
+*/
+.front {
+  transform: rotatex(0deg) translatez(25px);
+}
+
+.back {
+  transform: rotatex(-90deg) translatez(25px);
+  color: #ffe7c4;
+}
+
+.front, .back {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(25,58,58,.95);
+  padding: 15px 10px;
+  color: white;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+/*/////////////////////////End of Menu Bar///////////////////////*/
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
